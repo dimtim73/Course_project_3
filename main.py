@@ -1,4 +1,7 @@
 from utils import get_data
+from utils import get_filtered_data
+from utils import get_sorted_data
+from utils import get_formatted_data
 
 
 def main():
@@ -6,10 +9,12 @@ def main():
 
     data = get_data()
 
+    filtered_data = get_filtered_data(data)
+
+    sorted_data = get_sorted_data(filtered_data)
+
+    get_formatted_data(sorted_data)
+
+
 main()
 
-
-
-
-# if __name__ == '__main__':
-#     print_hi('PyCharm')
