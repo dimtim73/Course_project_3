@@ -68,6 +68,6 @@ def get_formatted_data(sorted_data):
 
         print_information = date_transaction + ' ' + transaction['description'] + '\n' + from_transaction + ' -> ' + to_transaction + '\n' + sum_transaction + currency_transaction + '\n'+'\n'
         sum_pr = sum_pr + print_information
-
+    print()
     print(sum_pr)
     return sum_pr
